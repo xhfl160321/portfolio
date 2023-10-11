@@ -35,8 +35,9 @@ ul {
 
 #wrap {
     width: 100%;
-    height: 7224px;
+    height: 8524px;
     margin: 0 auto;
+    position: relative;
     background: #fff;
 }
 
@@ -149,7 +150,7 @@ header ul li:hover a {
     height: 100%;
     /* background: darkorange; */
 }
-.tg {
+.web_table {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
@@ -157,7 +158,7 @@ header ul li:hover a {
     table-layout: fixed;
 }
 
-.tg td {
+.web_table td {
     width: 25%;
     height: 25%;
     border-color: black;
@@ -177,12 +178,12 @@ header ul li:hover a {
     /* background: purple; */
 }
 
-.img_img{
+.web_img{
     width: 100%;
     height: 55%;
     /* background: green; */
 }
-.img_img a{
+.web_img a{
     width: 100%;
     height: 100%;
     display: flex;
@@ -190,39 +191,39 @@ header ul li:hover a {
     align-items: center;
     overflow: hidden;
 }
-.img_img img{
+.web_img img{
     width: 100%;
     height: 80%;
     transition: 0.5s;
 }
-.img_con{
+.web_con{
     width: 100%;
     height: 45%;
     position: relative;
     /* background: red; */
 }
-.img_con p:first-child{
+.web_con p:first-child{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.img_con p{
+.web_con p{
     font-size: 13px;
     line-height: 23px;
 }
-.img_con p:last-child{
+.web_con p:last-child{
     font-size: 15px;
     font-weight: 100;
     position: absolute;
     bottom: 15%; right: 0;
 }
 
-.img_img img:hover{
+.web_img img:hover{
     height: 120%;
     object-fit: cover;
 }
 
-.tg .tg-0lax {
+.web_table .tg-0lax {
     /* text-align: left;
     vertical-align: top; */
 }
@@ -363,7 +364,8 @@ header ul li:hover a {
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-end;
-    background: yellow;
+    position: relative;
+    /* background: yellow; */
 }
 
 #p4 header ul li:last-child {
@@ -375,9 +377,127 @@ header ul li:hover a {
 }
 
 /* p4_con 웹 표 */
+#p4 section {
+    width: 100%;
+    height: 85%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: orange; */
+}
 
+.p4_con{
+    width: 90%;
+    height: 100%;
+    /* background: darkorange; */
+}
 
+.goods_table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
 
+.goods_table td {
+    width: 25%;
+    height: 14.2%;
+    border: none;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg-1lax > div{
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* background: purple; */
+}
+
+.goods_con{
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    /* background: red; */
+}
+.goods_con p{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.goods_img{
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: green; */
+}
+
+.goods_img img{
+    width: 200px;
+    height: 200px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.goods_img img:hover{
+    filter: drop-shadow(8px 8px 8px #555);
+}
+.phonecase > .pc1 img{
+    width: 200px;
+    height: 200px;
+}
+.phonecase > .pc2 img, .pc3 img{
+    width: 150px;
+    height: 180px;
+}
+.phonecase > .pc4 img{
+    width: 130px;
+    height: 180px;
+}
+.post > .goods_img img{
+    width: 180px;
+}
+.photo > .pt1 img{
+    width: 180px;
+    
+}
+.photo > .pt2 img{
+    width: 150px;
+    height: 150px;
+}
+.cup > .c1 img, .cup > .c2 img{
+    width: 280px;
+    height: 150px;
+}
+.cup > .c3 img{
+    width: 180px;
+    height: 180px;
+}
+.cup > .c4 img{
+    width: 170px;
+    height: 170px;
+}
+.etc > .etc2 img{
+    width: 300px;
+    height: 200px;
+}
+
+/* .goods_table .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+} */
 
 /* .introduce p.cursor {animation: cursor 0.3s infinite;}
 
@@ -386,3 +506,71 @@ header ul li:hover a {
     50%{border-right: 1px solid #000} 
     100%{border-right: 1px solid #fff} 
 } */
+
+/* layer popup */
+#layerpop{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255, 0.9);
+    /* background: red; */
+    position: absolute;
+    top: 7000px; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 60;
+    border-radius: 50% 50% 10% 10%;
+}
+.close{
+    right: 15px; top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+#layerpop .l_img{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: green; */
+}
+#layerpop .l_img img{
+    width: auto;
+    height: 300px;
+}
+
+#layerpop .l_con{
+    width: 80%;
+    height: 30%;
+    /* background: yellow; */
+}
+.l_con_list li{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+#layerpop .l_con p:first-child{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+#layerpop .l_con p:last-child{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: right;
+}
+
+
+.bg{
+    display: none;
+    width: 100%;
+    height: 8524px;
+    background: rgba(0,0,0,0.6);
+    z-index: 50;
+    position: absolute;
+    top: 0; left: 0;
+}

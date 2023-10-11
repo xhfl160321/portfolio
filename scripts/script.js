@@ -137,4 +137,52 @@
             scrollTop: $($(this).attr('href')).offset().top
         }, 500, 'linear');
     });
+
+    // 굿즈 스크립트
+
+
+    // 굿즈의 해당 이미지 클릭 시 해당 이미지와 설명 팝업 창 show
+    var imgBtn = $(".goods_img img");
+    var popupImg = $("#layerpop .l_img_list li");
+    var popupCon = $("#layerpop .l_con_list li");
+
+    popupImg.hide().eq(0).show();
+    popupCon.hide().eq(0).show();
+    $("#layerpop").hide();
+
+    imgBtn.each(function (index, obj) {
+
+        // console.log(index, obj);
+        var target = $(this);
+
+        target.click(function (e) {
+            e.preventDefault();
+
+            // console.log(index, obj, "!button clicked!");
+
+            $("#layerpop").show();
+            $(".bg").show();
+            target.removeClass("active");
+            target.addClass("active");
+            popupImg.hide();
+            popupImg.eq(index).show();
+            popupCon.hide();
+            popupCon.eq(index).show();
+        });
+    });
+
+    // x 버튼 클릭 시 팝업 닫힘
+    // $("#layerpop").hide();
+    $(".close").click(function () {
+        $("#layerpop").hide();
+        $(".bg").hide();
+    });
+
+    $(document).mouseup(function (e) {
+        var imgPopup = $("#layerpop");
+        if (imgPopup.has(e.target).length === 0) {
+            imgPopup.hide();
+            $(".bg").hide();
+        }
+    });
 })(jQuery);
