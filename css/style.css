@@ -432,7 +432,7 @@ header ul li:hover a {
 }
 .goods_con p{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 .goods_img{
@@ -551,17 +551,17 @@ header ul li:hover a {
 }
 .l_con_list li{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
 }
 #layerpop .l_con p:first-child{
-    width: 50%;
+    width: 30%;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
 }
 #layerpop .l_con p:last-child{
-    width: 50%;
+    width: 30%;
     font-size: 18px;
     font-weight: 100;
     text-align: right;
