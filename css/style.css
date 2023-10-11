@@ -119,12 +119,12 @@ header ul li:hover a {
 /********************** p2 **********************/
 #p2 {
     width: 100%;
-    height: 2500px;
+    height: 2000px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-end;
-    /* background: goldenrod; */
+    /* background: green; */
 }
 
 #p2 header ul li:first-child {
@@ -135,8 +135,136 @@ header ul li:hover a {
     color: #fff;
 }
 
-/* 웹 표 */
 #p2 section {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    /* background: orange; */
+}
+
+#p2 section div {
+    width: 90%;
+}
+
+#p2 section div hr {
+    width: 100%;
+    border-width: 1px;
+    border-color: #111;
+}
+
+#p2 section div.p2_con1 {
+    height: 25%;
+    /* background: pink; */
+}
+
+#p2 section div.p2_con2 {
+    height: 40%;
+    /* background: lightpink; */
+}
+
+#p2 section div.p2_con3 {
+    height: 35%;
+    /* background: lightpink; */
+}
+
+#p2 section div.p2_con1 .hak,
+#p2 section div.p2_con2 .ja,
+#p2 section div.p2_con3 .ex {
+    width: 98%;
+    height: 85%;
+    margin: 0 auto;
+    margin-top: 1%;
+    /* background: red; */
+}
+
+#p2 section div.p2_con1 .hak .hak_l,
+#p2 section div.p2_con2 .ja_l,
+#p2 section div.p2_con3 .ex .ex_l {
+    float: left;
+    width: 17%;
+    height: 100%;
+    /* background: blue; */
+}
+
+#p2 section div.p2_con1 .hak .hak_r,
+#p2 section div.p2_con2 .ja_r,
+#p2 section div.p2_con3 .ex .ex_r {
+    float: left;
+    width: 83%;
+    height: 100%;
+    /* background: lightblue; */
+}
+
+#p2 section div.p2_con1 .hak .hak_l p,
+#p2 section div.p3_con2 .ja_l p #p3 section div.p3_con3 .ex_l p {
+    font-size: 1em;
+}
+
+#p2 section div.p2_con1 .hak .hak_r p:first-child {
+    font-size: 1.3em;
+    margin-bottom: 1%;
+}
+
+#p2 section div.p2_con1 .hak .hak_r p:nth-child(n+2):nth-child(-n+3) {
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+#p2 section div.p2_con2 .ja_r p:nth-child(3n+1),
+#p2 section div.p2_con3 .ex_r p:nth-child(3n+1) {
+    font-size: 1.3em;
+    margin-bottom: 1%;
+}
+
+#p2 section div.p2_con1 .hak .hak_r p.since {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 10%;
+}
+
+#p2 section div.p2_con2 .ja_r p.since,
+#p2 section div.p2_con3 .ex_r p.since {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 2%;
+}
+
+#p2 section div.p2_con2 .ja_r hr,
+#p2 section div.p2_con3 .ex_r hr {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-color: #fff;
+    border-width: 1px 0 0 0;
+}
+
+/********************** p3 **********************/
+#p3 {
+    width: 100%;
+    height: 2500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    /* background: goldenrod; */
+}
+
+#p3 header ul li:nth-child(2) {
+    background: #5157D0;
+}
+
+#p3 header ul li:nth-child(2) a {
+    color: #fff;
+}
+
+/* 웹 표 */
+#p3 section {
     width: 100%;
     height: 75%;
     margin-top: 5%;
@@ -145,7 +273,7 @@ header ul li:hover a {
     align-items: center;
     /* background: orange; */
 }
-.p2_con{
+.p3_con{
     width: 90%;
     height: 100%;
     /* background: darkorange; */
@@ -228,133 +356,7 @@ header ul li:hover a {
     vertical-align: top; */
 }
 
-/********************** p3 **********************/
-#p3 {
-    width: 100%;
-    height: 2000px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-end;
-    /* background: green; */
-}
 
-#p3 header ul li:nth-child(2) {
-    background: #5157D0;
-}
-
-#p3 header ul li:nth-child(2) a {
-    color: #fff;
-}
-
-#p3 section {
-    width: 100%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5%;
-    /* background: orange; */
-}
-
-#p3 section div {
-    width: 90%;
-}
-
-#p3 section div hr {
-    width: 100%;
-    border-width: 1px;
-    border-color: #111;
-}
-
-#p3 section div.p3_con1 {
-    height: 25%;
-    /* background: pink; */
-}
-
-#p3 section div.p3_con2 {
-    height: 40%;
-    /* background: lightpink; */
-}
-
-#p3 section div.p3_con3 {
-    height: 35%;
-    /* background: lightpink; */
-}
-
-#p3 section div.p3_con1 .hak,
-#p3 section div.p3_con2 .ja,
-#p3 section div.p3_con3 .ex {
-    width: 98%;
-    height: 85%;
-    margin: 0 auto;
-    margin-top: 1%;
-    /* background: red; */
-}
-
-#p3 section div.p3_con1 .hak .hak_l,
-#p3 section div.p3_con2 .ja_l,
-#p3 section div.p3_con3 .ex .ex_l {
-    float: left;
-    width: 17%;
-    height: 100%;
-    /* background: blue; */
-}
-
-#p3 section div.p3_con1 .hak .hak_r,
-#p3 section div.p3_con2 .ja_r,
-#p3 section div.p3_con3 .ex .ex_r {
-    float: left;
-    width: 83%;
-    height: 100%;
-    /* background: lightblue; */
-}
-
-#p3 section div.p3_con1 .hak .hak_l p,
-#p3 section div.p3_con2 .ja_l p #p3 section div.p3_con3 .ex_l p {
-    font-size: 1em;
-}
-
-#p3 section div.p3_con1 .hak .hak_r p:first-child {
-    font-size: 1.3em;
-    margin-bottom: 1%;
-}
-
-#p3 section div.p3_con1 .hak .hak_r p:nth-child(n+2):nth-child(-n+3) {
-    font-size: 1em;
-    line-height: 1.75em;
-}
-
-#p3 section div.p3_con2 .ja_r p:nth-child(3n+1),
-#p3 section div.p3_con3 .ex_r p:nth-child(3n+1) {
-    font-size: 1.3em;
-    margin-bottom: 1%;
-}
-
-#p3 section div.p3_con1 .hak .hak_r p.since {
-    text-align: right;
-    font-size: 1em;
-    font-weight: 100;
-    margin-top: 10%;
-}
-
-#p3 section div.p3_con2 .ja_r p.since,
-#p3 section div.p3_con3 .ex_r p.since {
-    text-align: right;
-    font-size: 1em;
-    font-weight: 100;
-    margin-top: 2%;
-}
-
-#p3 section div.p3_con2 .ja_r hr,
-#p3 section div.p3_con3 .ex_r hr {
-    width: 100%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    border-color: #fff;
-    border-width: 1px 0 0 0;
-}
 
 /********************** p4 **********************/
 #p4 {
@@ -521,7 +523,8 @@ header ul li:hover a {
     top: 7000px; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 60;
-    border-radius: 50% 50% 10% 10%;
+    /* border-radius: 50% 50% 10% 10%; */
+    border-radius: 50% 50%;
 }
 .close{
     right: 15px; top: 10px;
