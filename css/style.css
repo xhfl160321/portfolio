@@ -306,7 +306,7 @@ header ul li:hover a {
     /* background: purple; */
 }
 
-.web_img{
+.web_img, .adobe_img{
     width: 100%;
     height: 55%;
     /* background: green; */
@@ -324,22 +324,22 @@ header ul li:hover a {
     height: 80%;
     transition: 0.5s;
 }
-.web_con{
+.web_con, .adobe_con{
     width: 100%;
     height: 45%;
     position: relative;
     /* background: red; */
 }
-.web_con p:first-child{
+.web_con p:first-child, .adobe_con p:first-child{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.web_con p{
+.web_con p, .adobe_con p{
     font-size: 13px;
     line-height: 23px;
 }
-.web_con p:last-child{
+.web_con p:last-child, .adobe_con p:last-child{
     font-size: 15px;
     font-weight: 100;
     position: absolute;
@@ -351,6 +351,21 @@ header ul li:hover a {
     object-fit: cover;
 }
 
+.adobe_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adobe_img img{
+    width: 50%;
+    height: auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.adobe_img img:hover{
+    width: 60%;
+    height: auto;
+}
 .web_table .tg-0lax {
     /* text-align: left;
     vertical-align: top; */
