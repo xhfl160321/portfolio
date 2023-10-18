@@ -50,7 +50,7 @@
 
     //타이핑할 문장
     var result1 = "안녕하십니까,";
-    var result2 = "신입 퍼블리셔 황승재 입니다.";
+    var result2 = "신입 퍼블리셔(디자이너) 황승재 입니다.";
     var typeing1 = [], typeing2 = [];;
     result1 = result1.split(''); // 한글자씩자름
     result2 = result2.split(''); // 한글자씩자름
@@ -138,17 +138,28 @@
         }, 500, 'linear');
     });
 
+    // 포트폴리오 스크립트
+    // 어도비 아이콘 클릭 시 이미지 팝업 창 show
+
+    var adobeBtn = $(".adobe_img img");
+
+    $("#a_layerpop").hide();
+
+    adobeBtn.click(function(){
+        $("#a_layerpop").show();
+        $(".bg").show();
+    });
+
+
     // 굿즈 스크립트
-
-
     // 굿즈의 해당 이미지 클릭 시 해당 이미지와 설명 팝업 창 show
     var imgBtn = $(".goods_img img");
-    var popupImg = $("#layerpop .l_img_list li");
-    var popupCon = $("#layerpop .l_con_list li");
+    var popupImg = $("#g_layerpop .l_img_list li");
+    var popupCon = $("#g_layerpop .l_con_list li");
 
     popupImg.hide().eq(0).show();
     popupCon.hide().eq(0).show();
-    $("#layerpop").hide();
+    $("#g_layerpop").hide();
 
     imgBtn.each(function (index, obj) {
 
@@ -160,7 +171,7 @@
 
             // console.log(index, obj, "!button clicked!");
 
-            $("#layerpop").show();
+            $("#g_layerpop").show();
             $(".bg").show();
             target.removeClass("active");
             target.addClass("active");
@@ -172,16 +183,29 @@
     });
 
     // x 버튼 클릭 시 팝업 닫힘
-    // $("#layerpop").hide();
-    $(".close").click(function () {
-        $("#layerpop").hide();
+    // $("#g_layerpop").hide();
+    $(".g_close").click(function () {
+        $("#g_layerpop").hide();
         $(".bg").hide();
     });
 
     $(document).mouseup(function (e) {
-        var imgPopup = $("#layerpop");
-        if (imgPopup.has(e.target).length === 0) {
-            imgPopup.hide();
+        var g_imgPopup = $("#g_layerpop");
+        if (g_imgPopup.has(e.target).length === 0) {
+            g_imgPopup.hide();
+            $(".bg").hide();
+        }
+    });
+
+    $(".a_close").click(function () {
+        $("#a_layerpop").hide();
+        $(".bg").hide();
+    });
+
+    $(document).mouseup(function (e) {
+        var a_imgPopup = $("#a_layerpop");
+        if (a_imgPopup.has(e.target).length === 0) {
+            a_imgPopup.hide();
             $(".bg").hide();
         }
     });
