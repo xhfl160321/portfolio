@@ -147,36 +147,5 @@
         }, 500, 'linear');
     });
 
- 
 
-
-    
-
-    // x 버튼 클릭 시 팝업 닫힘
-    // $("#g_layerpop").hide();
-    $(".g_close").click(function () {
-        $("#g_layerpop").hide();
-        $(".bg").hide();
-    });
-
-    $(document).mouseup(function (e) {
-        var g_imgPopup = $("#g_layerpop");
-        if (g_imgPopup.has(e.target).length === 0) {
-            g_imgPopup.hide();
-            $(".bg").hide();
-        }
-    });
-
-    $(".a_close").click(function () {
-        $("#a_layerpop").hide();
-        $(".bg").hide();
-    });
-
-    $(document).mouseup(function (e) {
-        var a_imgPopup = $("#a_layerpop");
-        if (a_imgPopup.has(e.target).length === 0) {
-            a_imgPopup.hide();
-            $(".bg").hide();
-        }
-    });
 })(jQuery);

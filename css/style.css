@@ -330,15 +330,36 @@ ul, li{
 
 .goods ul.col_4 li{
     flex-basis: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .goods ul li img{
     width: 200px;
     transition: 0.5s;
     cursor: pointer;
+    display: block;
 }
 .goods ul li img:hover{
     filter: drop-shadow(8px 8px 8px #555);
 }
+.goods ul li h5{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 1.3px;
+}
+.goods ul li:hover h5{
+    opacity: 1;
+    bottom: -20%;
+} 
 
 /* bx */
 .bx{
@@ -373,6 +394,10 @@ footer .footer{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
     border-radius: 25px;
     position: relative;
+    transition: 1s;
+}
+footer .footer:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
 }
 footer p{
     color: #666;
