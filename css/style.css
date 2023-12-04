@@ -33,7 +33,6 @@ ul, li{
 .main{
     width: 85%;
     min-height: 100vh;
-    /* background: pink; */
     margin: auto;
     position: relative;
 }
@@ -109,7 +108,7 @@ ul, li{
     width: 180px;
     height: auto;
     margin: 35% 10% 15%; 
-    filter: drop-shadow(8px 8px 8px #999);
+    filter: drop-shadow(-5px 5px 10px #999);
 }
 .profile_left ul{
     margin-left: 10%;
@@ -143,6 +142,7 @@ ul, li{
     padding-left: 6%;
 }
 /* 약력, 보유스킬, 자격증 */
+/* 약력 */
 .profile_right{
     width: 48%;
     display: flex;
@@ -154,16 +154,18 @@ ul, li{
     width: 90%;
     flex-basis: 33%;
     box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     margin: 2% 0;
     padding: 4%;
+    transition: 0.7s;
 }
-
+.profile_right div:hover{
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.7);
+}
 .profile_con{
     width: 100%;
     background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-    padding: 2%;
 }
 .profile_con h3{
     /* display: inline; */
@@ -197,11 +199,10 @@ ul, li{
     right: 0;
     position: absolute;
 }
+/* 보유스킬 */
 .skills{
     width: 100%;
     background: rgba(82, 87, 208, 0.25);
-    padding: 2%;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
 }
 .skills ul{
     width: 100%;
@@ -250,11 +251,10 @@ ul, li{
 .fig_progress span{
     width: 40%;
 }
+/* 자격증 */
 .certificate{
     width: 100%;
     background: #fff;
-    padding: 2%;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
 }
 .certificate ul li{
     width: 90%;
@@ -271,6 +271,7 @@ ul, li{
     right: 7%;
 }
 
+/* common */
 .profile_right div h3{
     font-size: 18px;
     font-weight: bold;
@@ -356,4 +357,30 @@ section > h3{
     text-decoration: underline;
     text-decoration-color: #5157D0;
     text-decoration-style: wavy;
+}
+
+/*********** footer ***********/
+footer{
+    width: 60%;
+    padding: 20% 5%;
+    margin: auto;
+}
+footer p{
+    color: #666;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 2.5%;
+    letter-spacing: 3px;
+}
+footer h2{
+    letter-spacing: 3px;
+    display: inline;
+}
+footer a{
+    margin-left: 72.5%;
+}
+footer i{
+    
+    color: #5157D0;
+    font-size: 20px;
 }
