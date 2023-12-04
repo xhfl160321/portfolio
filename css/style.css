@@ -350,7 +350,7 @@ ul, li{
 
 /* common */
 section > h3{
-    text-align: right;
+    text-align: left;
     padding: 10% 5%;
     font-size: 30px;
     text-decoration: underline;
