@@ -1,4 +1,13 @@
 (function () {
+    //nav 스크립트
+    $(".nav_links ul li").hover(function () {
+        $(this).find(".sub_nav").stop().slideDown(500);
+    }, function(){
+        $(this).find(".sub_nav").stop().slideUp(500);
+    });
+
+
+
     // https://westzero.tistory.com/112
     // 메인페이지의 자기소개 글자 스크립트
     String.prototype.toKorChars = function () {
@@ -50,7 +59,7 @@
 
     //타이핑할 문장
     var result1 = "안녕하십니까,";
-    var result2 = "신입 퍼블리셔(디자이너) 황승재 입니다.";
+    var result2 = "신입 디자이너 황승재 입니다.";
     var typeing1 = [], typeing2 = [];;
     result1 = result1.split(''); // 한글자씩자름
     result2 = result2.split(''); // 한글자씩자름
@@ -138,49 +147,10 @@
         }, 500, 'linear');
     });
 
-    // 포트폴리오 스크립트
-    // 어도비 아이콘 클릭 시 이미지 팝업 창 show
-
-    var adobeBtn = $(".adobe_img img");
-
-    $("#a_layerpop").hide();
-
-    adobeBtn.click(function(){
-        $("#a_layerpop").show();
-        $(".bg").show();
-    });
+ 
 
 
-    // 굿즈 스크립트
-    // 굿즈의 해당 이미지 클릭 시 해당 이미지와 설명 팝업 창 show
-    var imgBtn = $(".goods_img img");
-    var popupImg = $("#g_layerpop .l_img_list li");
-    var popupCon = $("#g_layerpop .l_con_list li");
-
-    popupImg.hide().eq(0).show();
-    popupCon.hide().eq(0).show();
-    $("#g_layerpop").hide();
-
-    imgBtn.each(function (index, obj) {
-
-        // console.log(index, obj);
-        var target = $(this);
-
-        target.click(function (e) {
-            e.preventDefault();
-
-            // console.log(index, obj, "!button clicked!");
-
-            $("#g_layerpop").show();
-            $(".bg").show();
-            target.removeClass("active");
-            target.addClass("active");
-            popupImg.hide();
-            popupImg.eq(index).show();
-            popupCon.hide();
-            popupCon.eq(index).show();
-        });
-    });
+    
 
     // x 버튼 클릭 시 팝업 닫힘
     // $("#g_layerpop").hide();
